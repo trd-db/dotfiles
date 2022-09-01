@@ -68,6 +68,9 @@ vim.opt.hidden = true
 -- Allow the mouse to be used in neovim
 vim.opt.mouse = "a"
 vim.opt.completeopt = {"menu" , "menuone" , "noselect" }
+-- Full wild menu
+vim.opt.wildmenu = true
+vim.opt.wildmode = "list:longest,full"
 
 
 -- [[ Wrap ]]

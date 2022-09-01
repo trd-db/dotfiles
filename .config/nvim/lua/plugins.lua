@@ -101,28 +101,6 @@ return require('packer').startup(function(use)
             }
         }
         
-        -- Fuzzy wild menu
-        use {
-            'gelguy/wilder.nvim',
-            config = function()
-                local wilder = require('wilder')
-                wilder.setup({modes = {':', '/', '?'}})
-
-                wilder.set_option('pipeline', {
-                    wilder.branch(
-                        wilder.cmdline_pipeline(),
-                        wilder.search_pipeline()
-                    ),
-                })
-
-                wilder.set_option('renderer', wilder.popupmenu_renderer(
-                    -- { highlighter = wilder.basic_highlighter(), },
-                    wilder.popupmenu_border_theme({
-                        border = 'rounded',
-                    })
-                ))
-            end
-        }
         -- File explorer
         use {
             'kyazdani42/nvim-tree.lua',

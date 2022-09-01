@@ -141,10 +141,8 @@ _G.packer_plugins = {
     url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-cmp"] = {
-    after = { "tabout.nvim" },
     config = { "\27LJ\2\2#\0\0\2\0\2\0\0046\0\0\0'\1\1\0B\0\2\1K\0\1\0\blsp\frequire\0" },
     loaded = true,
-    only_config = true,
     path = "/home/db/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
@@ -177,7 +175,6 @@ _G.packer_plugins = {
     url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
-    after = { "tabout.nvim" },
     commands = { "TSUpdate", "TSUpdateSync" },
     config = { "\27LJ\2\0022\0\0\2\0\2\0\0046\0\0\0'\1\1\0B\0\2\1K\0\1\0\23plugins.treesitter\frequire\0" },
     loaded = false,
@@ -195,17 +192,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/db/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["tabout.nvim"] = {
-    config = { "\27LJ\2\2•\3\0\0\4\0\f\0\0236\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0004\2\a\0005\3\4\0>\3\1\0025\3\5\0>\3\2\0025\3\6\0>\3\3\0025\3\a\0>\3\4\0025\3\b\0>\3\5\0025\3\t\0>\3\6\2=\2\n\0014\2\0\0=\2\v\1B\0\2\1K\0\1\0\fexclude\ftabouts\1\0\2\topen\6{\nclose\6}\1\0\2\topen\6[\nclose\6]\1\0\2\topen\6(\nclose\6)\1\0\2\topen\6`\nclose\6`\1\0\2\topen\6\"\nclose\6\"\1\0\2\topen\6'\nclose\6'\1\0\t\22default_shift_tab\n<C-d>\15act_as_tab\2\21ignore_beginning\2\21act_as_shift_tab\1\15completion\2\21enable_backwards\2\16default_tab\n<C-t>\21backwards_tabkey\f<S-Tab>\vtabkey\n<Tab>\nsetup\vtabout\frequire\0" },
-    load_after = {
-      ["nvim-treesitter"] = true
-    },
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/db/.local/share/nvim/site/pack/packer/opt/tabout.nvim",
-    url = "https://github.com/abecodes/tabout.nvim",
-    wants = { "nvim-treesitter" }
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -226,12 +212,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/db/.local/share/nvim/site/pack/packer/start/vim-sensible",
     url = "https://github.com/tpope/vim-sensible"
-  },
-  ["wilder.nvim"] = {
-    config = { "\27LJ\2\2¦\2\0\0\a\0\15\1\0286\0\0\0'\1\1\0B\0\2\0029\1\2\0005\2\4\0005\3\3\0=\3\5\2B\1\2\0019\1\6\0'\2\a\0004\3\3\0009\4\b\0009\5\t\0B\5\1\0029\6\n\0B\6\1\0A\4\1\0?\4\0\0B\1\3\0019\1\6\0'\2\v\0009\3\f\0009\4\r\0005\5\14\0B\4\2\0A\3\0\0A\1\1\1K\0\1\0\1\0\1\vborder\frounded\27popupmenu_border_theme\23popupmenu_renderer\rrenderer\20search_pipeline\21cmdline_pipeline\vbranch\rpipeline\15set_option\nmodes\1\0\0\1\4\0\0\6:\6/\6?\nsetup\vwilder\frequire\3€€À™\4\0" },
-    loaded = true,
-    path = "/home/db/.local/share/nvim/site/pack/packer/start/wilder.nvim",
-    url = "https://github.com/gelguy/wilder.nvim"
   }
 }
 
@@ -264,10 +244,6 @@ time([[Config for nvim-lastplace]], false)
 time([[Config for lualine.nvim]], true)
 try_loadstring("\27LJ\2\2/\0\0\2\0\2\0\0046\0\0\0'\1\1\0B\0\2\1K\0\1\0\20plugins.lualine\frequire\0", "config", "lualine.nvim")
 time([[Config for lualine.nvim]], false)
--- Config for: gitsigns.nvim
-time([[Config for gitsigns.nvim]], true)
-try_loadstring("\27LJ\2\2:\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
-time([[Config for gitsigns.nvim]], false)
 -- Config for: Comment.nvim
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\0025\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
@@ -276,10 +252,10 @@ time([[Config for Comment.nvim]], false)
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\2@\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
 time([[Config for nvim-autopairs]], false)
--- Config for: wilder.nvim
-time([[Config for wilder.nvim]], true)
-try_loadstring("\27LJ\2\2¦\2\0\0\a\0\15\1\0286\0\0\0'\1\1\0B\0\2\0029\1\2\0005\2\4\0005\3\3\0=\3\5\2B\1\2\0019\1\6\0'\2\a\0004\3\3\0009\4\b\0009\5\t\0B\5\1\0029\6\n\0B\6\1\0A\4\1\0?\4\0\0B\1\3\0019\1\6\0'\2\v\0009\3\f\0009\4\r\0005\5\14\0B\4\2\0A\3\0\0A\1\1\1K\0\1\0\1\0\1\vborder\frounded\27popupmenu_border_theme\23popupmenu_renderer\rrenderer\20search_pipeline\21cmdline_pipeline\vbranch\rpipeline\15set_option\nmodes\1\0\0\1\4\0\0\6:\6/\6?\nsetup\vwilder\frequire\3€€À™\4\0", "config", "wilder.nvim")
-time([[Config for wilder.nvim]], false)
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\2\2:\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
