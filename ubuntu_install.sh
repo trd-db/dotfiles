@@ -16,6 +16,7 @@ sudo apt install -y \
     perl \
     llvm \
     nodejs \
+    xclip \
     curl \
     ripgrep \
     npm \

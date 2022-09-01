@@ -11,7 +11,7 @@ local packer_util = require('packer.util')
 return require('packer').startup(function(use)
   
         use 'wbthomason/packer.nvim'
-  
+
         -- LSP
         use 'williamboman/nvim-lsp-installer'
         use 'neovim/nvim-lspconfig'
