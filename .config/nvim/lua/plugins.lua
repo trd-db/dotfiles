@@ -46,6 +46,12 @@ return require('packer').startup(function(use)
             },
 		    config = function() require('lsp') end
 	})
+    
+        -- Dashboard
+        use {
+            'startup-nvim/startup.nvim',
+            config = function() require('startup').setup({theme = "dashboard"}) end  
+        }
 
 	    -- luasnip
         use 'L3MON4D3/LuaSnip'
