@@ -25,8 +25,14 @@ return require('packer').startup(function(use)
         }
 
         -- Colorscheme
-        use 'ellisonleao/gruvbox.nvim'
-        
+        use({
+          'projekt0n/github-nvim-theme',
+          config = function()
+            require('github-theme').setup({
+                  theme_style = "light"
+            })
+          end
+        })
 	    -- Completion
         use({
             "hrsh7th/nvim-cmp",
@@ -74,7 +80,9 @@ return require('packer').startup(function(use)
         -- Git
         use {
             'lewis6991/gitsigns.nvim',
-            config = function() require('gitsigns').setup() end
+            config = function() require('gitsigns').setup({
+                
+            }) end
         }
         
         use 'tpope/vim-fugitive'
@@ -96,13 +104,41 @@ return require('packer').startup(function(use)
         -- Fuzzy wild menu
         use {
             'gelguy/wilder.nvim',
-            config = function() require('plugins.wilder') end 
+            config = function()
+                local wilder = require('wilder')
+                wilder.setup({modes = {':', '/', '?'}})
+
+                wilder.set_option('pipeline', {
+                    wilder.branch(
+                        wilder.cmdline_pipeline(),
+                        wilder.search_pipeline()
+                    ),
+                })
+
+                wilder.set_option('renderer', wilder.popupmenu_renderer(
+                    -- { highlighter = wilder.basic_highlighter(), },
+                    wilder.popupmenu_border_theme({
+                        border = 'rounded',
+                    })
+                ))
+            end
         }
-        
         -- File explorer
         use {
             'kyazdani42/nvim-tree.lua',
-            config = function() require('nvim-tree').setup() end
+            config = function() require('nvim-tree').setup({
+               renderer = { icons = { show = {file= false, folder=false, folder_arrow=false, git=false}}}
+            }) end
         }
-        
+
+        -- Save place in file
+       use {
+           'ethanholz/nvim-lastplace',
+            config = function() require('nvim-lastplace').setup() end
+       } 
+
+       -- Auto pairs
+       use {
+       "windwp/nvim-autopairs", config = function() require("nvim-autopairs").setup {} end
+       }
 end)

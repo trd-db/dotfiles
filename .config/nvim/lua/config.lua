@@ -28,9 +28,6 @@ vim.opt.timeoutlen = 500
 --------------------------------------------------
 -- Set terminal colors
 vim.g.t_co = 256
--- Background color
-vim.g.background = "dark"
-vim.cmd([[colorscheme gruvbox]])
 -- Allow syntax highlighting
 vim.opt.syntax = "ON"
 -- If term supports ui color then enable

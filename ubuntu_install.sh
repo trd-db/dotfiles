@@ -51,6 +51,9 @@ sudo update-alternatives --config vim
 sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
 sudo update-alternatives --config editor
 
+cp -r .config $HOME
+cp .zshrc $HOME
+cp .tmux.conf $HOME
 # Set zsh as default
 chsh -s $(which zsh)
 # Setup oh-my-zsh
