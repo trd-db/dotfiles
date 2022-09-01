@@ -43,8 +43,6 @@ vim.opt.cursorline = true
 vim.opt.guifont = "monospace:h17"
 
 
-
-
 -- [[ Context ]]
 --------------------------------------------------
 -- Show col for max line length
@@ -72,7 +70,7 @@ vim.opt.smartindent = true
 vim.opt.hidden = true
 -- Allow the mouse to be used in neovim
 vim.opt.mouse = "a"
-vim.opt.completeopt = { "menuone", "noselect" }
+vim.opt.completeopt = {"menu" , "menuone" , "noselect" }
 
 
 -- [[ Wrap ]]
