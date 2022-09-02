@@ -17,6 +17,7 @@ require('nvim-tree').setup {
 				folder_arrow = false,
 			},
 			glyphs = {
+                symlink = '➜',
 				git = {
 					unstaged = '●',
 					staged = '●',
