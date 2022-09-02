@@ -52,6 +52,11 @@ local lsp_flags = {
   debounce_text_changes = 150,
 }
 
+-- Add window border
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+  border = "rounded",
+})
+
 -- Setup nvim-cmp.
 local cmp = require('cmp')
 
@@ -137,5 +142,4 @@ require('lspconfig')['sumneko_lua'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
 }
-
 
