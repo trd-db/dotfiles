@@ -55,8 +55,6 @@ vim.opt.sidescrolloff = 8
 vim.opt.signcolumn = "yes"
 -- More space in the neovim command line for displaying messages
 vim.opt.cmdheight = 2
--- Pop up menu height
-vim.opt.pumheight = 10
 -- So that `` is visible in markdown files
 vim.opt.conceallevel = 0
 -- Allows neovim to access the system clipboard
@@ -67,7 +65,6 @@ vim.opt.smartindent = true
 vim.opt.hidden = true
 -- Allow the mouse to be used in neovim
 vim.opt.mouse = "a"
-vim.opt.completeopt = {"menu" , "menuone" , "noselect" }
 -- Full wild menu
 vim.opt.wildmenu = true
 vim.opt.wildmode = "list:longest,full"

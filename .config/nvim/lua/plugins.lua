@@ -44,8 +44,7 @@ return require('packer').startup(function(use)
                   { "hrsh7th/cmp-cmdline"},
                   { "saadparwaiz1/cmp_luasnip"},
             },
-		    config = function() require('lsp') end
-	})
+        })
     
         -- Dashboard
         use {
