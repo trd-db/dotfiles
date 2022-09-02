@@ -134,3 +134,4 @@ vim.opt.foldexpr = ""
 vim.opt.spell = false
 vim.opt.spelllang = "en"
 
+

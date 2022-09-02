@@ -111,9 +111,7 @@ return require('packer').startup(function(use)
         -- File explorer
         use {
             'kyazdani42/nvim-tree.lua',
-            config = function() require('nvim-tree').setup({
-               renderer = { icons = { show = {file= false, folder=false, folder_arrow=false, git=false}}}
-            }) end
+            config = function() require('plugins.nvim-tree') end
         }
 
         -- Save place in file
