@@ -52,6 +52,11 @@ local lsp_flags = {
   debounce_text_changes = 150,
 }
 
+-- lsp border
+lsp.handlers["textDocument/hover"] = lsp.with(vim.lsp.handlers.hover, {
+  border = "rounded",
+})
+
 -- Add window border
 -- vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
 --   border = "rounded",
