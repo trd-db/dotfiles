@@ -16,6 +16,33 @@ return require('packer').startup(function(use)
         use 'williamboman/nvim-lsp-installer'
         use 'neovim/nvim-lspconfig'
 
+        -- Refactoring
+        use {
+            "ThePrimeagen/refactoring.nvim",
+            requires = {
+                {"nvim-lua/plenary.nvim"},
+                {"nvim-treesitter/nvim-treesitter"}
+            },
+            config = function() require('refactoring').setup({
+                prompt_func_return_type = {
+                    cpp = true,
+                    c = true,
+                    cxx = true,
+                    h = true,
+                    hpp = true,
+                    python = true
+                },
+                prompt_func_param_type = {
+                    cpp = true,
+                    c = true,
+                    cxx = true,
+                    h = true,
+                    hpp = true,
+                    python = true
+                }
+            }) end
+        }
+
         -- Better syntax highlighting
         use {
             'nvim-treesitter/nvim-treesitter',

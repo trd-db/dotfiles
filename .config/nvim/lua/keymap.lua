@@ -37,6 +37,15 @@ vim.keymap.set("v", '<leader><leader>/', "<cmd>lua require'hop'.hint_patterns()<
 vim.keymap.set("v", '<leader><leader>l', "<cmd>lua require'hop'.hint_lines()<cr>", opts)
 
 
+-- [[ Refactor ]]
+--------------------------------------------------
+vim.api.nvim_set_keymap(
+    "v",
+    "<leader>rr",
+    ":lua require('refactoring').select_refactor()<CR>",
+    { noremap = true, silent = true, expr = false }
+)
+
 -- [[ Misc ]]
 --------------------------------------------------
 -- Leader q closes buffer
