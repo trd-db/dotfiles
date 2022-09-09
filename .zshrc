@@ -1,5 +1,5 @@
 # Launch tmux by default
-if [ "$TMUX" = "" ]; then tmux; fi
+# if [ "$TMUX" = "" ]; then tmux; fi
 
 # Use scroll wheel
 TranslateWheelToCursor=on
