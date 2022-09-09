@@ -25,22 +25,36 @@ function! Cond(cond, ...)
 endfunction
 
 
-if has('win32')
-        call plug#begin('~/AppData/Local/nvim/plugged')
-    else
-        call plug#begin()
-    endif
-        Plug 'tpope/vim-sensible'
-        Plug 'tpope/vim-commentary'
-        Plug 'tpope/vim-surround'
-        Plug 'phaazon/hop.nvim'
-  
-call plug#end()
-
 lua << EOF
-require'hop'.setup {
-  keys = 'etovxqpdygfblzhckisuran',
-}
+
+local ensure_packer = function()
+  local fn = vim.fn
+  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+  if fn.empty(fn.glob(install_path)) > 0 then
+    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+    vim.cmd [[packadd packer.nvim]]
+    return true
+  end
+  return false
+end
+
+local packer_bootstrap = ensure_packer()
+
+return require('packer').startup(function(use)
+        use 'wbthomason/packer.nvim'
+        use 'tpope/vim-sensible'
+        use 'tpope/vim-commentary'
+        use 'tpope/vim-surround'
+        use 'tpope/vim-repeat'
+        use {
+            'phaazon/hop.nvim',
+            branch = 'v2', -- optional but strongly recommended
+            config = function() require('hop').setup{keys = 'etovxqpdygfblzhckisuran'} end }
+
+        if packer_bootstrap then
+          require('packer').sync()
+        end
+end)
 EOF
 
 nnoremap <silent> <leader><leader>b :lua require'hop'.hint_words()<cr>
