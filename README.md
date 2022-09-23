@@ -8,7 +8,29 @@ This repo contains all my various dotfiles for configuration on a unix based sys
 
 ## Ubuntu
 
-Running the ubuntu_install.sh will set up the required dotfile dependencies.
+Required Dependencies:
+```bash
+sudo apt install -y \
+    software-properties-common \
+    git \
+    python3-dev \
+    python3-pip \
+    cmake \
+    make \
+    g++ \
+    gcc \
+    clang \
+    clangd \
+    ccls \
+    perl \
+    llvm \
+    nodejs \
+    xclip \
+    curl \
+    ripgrep \
+    npm \
+    exuberant-ctags
+```
 
 ## VSCode
 
