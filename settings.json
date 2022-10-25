@@ -1,0 +1,245 @@
+{
+    "autoDocstring.docstringFormat": "sphinx",
+    "autoDocstring.startOnNewLine": true,
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.path": "c:\\Users\\BrackettDT\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\14.0.3\\clangd_14.0.3\\bin\\clangd.exe",
+    "cmake.configureOnOpen": true,
+    "cSpell.enabledLanguageIds": [
+        "markdown"
+    ],
+    "editor.bracketPairColorization.enabled": true,
+    "editor.fontFamily": "'Fira Code', 'Source Code Pro', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.lineNumbers": "relative",
+    "editor.linkedEditing": true,
+    "editor.minimap.enabled": false,
+    "editor.rulers": [
+        80
+    ],
+    "editor.snippetSuggestions": "top",
+    "editor.suggestSelection": "first",
+    "editor.wordWrap": "on",
+    "emmet.showSuggestionsAsSnippets": true,
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    "git.autofetch": true,
+    "git.ignoreLegacyWarning": true,
+    "git.ignoreMissingGitWarning": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": true,
+        "markdown": true
+    },
+    "http.proxyStrictSSL": false,
+    "jupyter.sendSelectionToInteractiveWindow": true,
+    "python.languageServer": "Pylance",
+    "remote.SSH.remotePlatform": {
+        "localhost": "linux",
+        "dylanbrackett-cs7646-8v3a2169zt8.ssh.ws-us67.gitpod.io": "linux",
+        "dylanbrackett-cs7646-z6e45qo95ul.ssh.ws-us67.gitpod.io": "linux",
+        "dylanbrackett-cs7646-z6e45qo95ul.ssh.ws-us69.gitpod.io": "linux",
+        "dylanbrackett-cs7646-bfcljvpf8oc.ssh.ws-us67.gitpod.io": "linux",
+        "dylanbrackett-cs7646-q7spsl207eb.ssh.ws-us67.gitpod.io": "linux",
+        "dylanbrackett-cs7646-lnhizbabv69.ssh.ws-us70.gitpod.io": "linux"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "settingsSync.ignoredSettings": [
+        "editor.fontSize",
+        "github.copilot.enable"
+    ],
+    "settingsSync.keybindingsPerPlatform": false,
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "vim.easymotion": true,
+    "vim.handleKeys": {
+        "<C-b>": false,
+        "<C-A>": false,
+        "<C-f>": false,
+        "<C-j>": false,
+        "<C-e>": false,
+        "<C-w>": false,
+        "<C-z>": false,
+    },
+    "vim.hlsearch": true,
+    "vim.incsearch": true,
+    "vim.leader": " ",
+    "vim.smartRelativeLine": true,
+    "vim.useCtrlKeys": true,
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "u"
+            ],
+            "commands": [
+                "undo"
+            ]
+        },
+        {
+            "before": [
+                "C-r"
+            ],
+            "commands": [
+                "redo"
+            ]
+        },
+        {
+            "before": [
+                "j"
+            ],
+            "after": [
+                "g",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "k"
+            ],
+            "after": [
+                "g",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "g",
+                "h"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.navigateLeft"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "j"
+            ],
+            "commands": [
+                "workbench.action.navigateDown"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "k"
+            ],
+            "commands": [
+                "workbench.action.navigateUp"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.navigateRight"
+            ]
+        },
+        
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "j"
+            ],
+            "after": [
+                "g",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "k"
+            ],
+            "after": [
+                "g",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.navigateLeft"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "j"
+            ],
+            "commands": [
+                "workbench.action.navigateDown"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "k"
+            ],
+            "commands": [
+                "workbench.action.navigateUp"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.navigateRight"
+            ]
+        },
+    ],
+    "window.commandCenter": true,
+    "window.titleBarStyle": "custom",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "right",
+    "workbench.editorAssociations": {
+        "*.csv": "gc-excelviewer-csv-editor"
+    },
+    "remote.SSH.defaultExtensions": [
+        "gitpod.gitpod-remote-ssh"
+    ],
+    "redhat.telemetry.enabled": false,
+    "workbench.colorCustomizations": {},
+    "lldb.suppressUpdateNotifications": true,
+    "workbench.colorTheme": "GitHub Light",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+}
