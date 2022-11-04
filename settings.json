@@ -1,22 +1,28 @@
 {
     "autoDocstring.docstringFormat": "sphinx",
     "autoDocstring.startOnNewLine": true,
-    "C_Cpp.intelliSenseEngine": "disabled",
-    "clangd.path": "c:\\Users\\BrackettDT\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\14.0.3\\clangd_14.0.3\\bin\\clangd.exe",
-    "cmake.configureOnOpen": true,
-    "cSpell.enabledLanguageIds": [
-        "markdown"
-    ],
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "clangd.arguments": ["-header-insertion=never"],
+    "clangd.path": "/home/dylan.brackett/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.3/clangd_15.0.3/bin/clangd",
+    "cmake.configureOnOpen": false,
+    "cSpell.enabledLanguageIds": ["markdown"],
     "editor.bracketPairColorization.enabled": true,
+    "editor.cursorSurroundingLines": 10,
     "editor.fontFamily": "'Fira Code', 'Source Code Pro', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
+    "editor.fontSize": 16,
     "editor.inlineSuggest.enabled": true,
     "editor.lineNumbers": "relative",
     "editor.linkedEditing": true,
     "editor.minimap.enabled": false,
     "editor.rulers": [
-        80
+        100
     ],
+    "files.exclude": {
+        "**/bazel-*": true,
+        "**/.git/": true,
+        "**/.cache/": true
+    },
     "editor.snippetSuggestions": "top",
     "editor.suggestSelection": "first",
     "editor.wordWrap": "on",
@@ -33,45 +39,29 @@
         "plaintext": true,
         "markdown": true
     },
+    "git.autoRepositoryDetection": false,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
     "http.proxyStrictSSL": false,
+    "indentRainbow.ignoreErrorLanguages": ["*"],
     "jupyter.sendSelectionToInteractiveWindow": true,
+    "lldb.suppressUpdateNotifications": true,
     "python.languageServer": "Pylance",
-    "remote.SSH.remotePlatform": {
-        "localhost": "linux",
-        "dylanbrackett-cs7646-8v3a2169zt8.ssh.ws-us67.gitpod.io": "linux",
-        "dylanbrackett-cs7646-z6e45qo95ul.ssh.ws-us67.gitpod.io": "linux",
-        "dylanbrackett-cs7646-z6e45qo95ul.ssh.ws-us69.gitpod.io": "linux",
-        "dylanbrackett-cs7646-bfcljvpf8oc.ssh.ws-us67.gitpod.io": "linux",
-        "dylanbrackett-cs7646-q7spsl207eb.ssh.ws-us67.gitpod.io": "linux",
-        "dylanbrackett-cs7646-lnhizbabv69.ssh.ws-us70.gitpod.io": "linux"
-    },
+    "remote.SSH.defaultExtensions": [
+        "gitpod.gitpod-remote-ssh"
+    ],
+    "redhat.telemetry.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
     "settingsSync.ignoredSettings": [
         "editor.fontSize",
-        "github.copilot.enable"
+        "github.copilot.enable",
+        "terminal.integrated.fontSize"
     ],
     "settingsSync.keybindingsPerPlatform": false,
-    "terminal.integrated.profiles.linux": {
-        "bash": {
-            "path": "bash",
-            "icon": "terminal-bash"
-        },
-        "zsh": {
-            "path": "zsh"
-        },
-        "fish": {
-            "path": "fish"
-        },
-        "tmux": {
-            "path": "tmux",
-            "icon": "terminal-tmux"
-        },
-        "pwsh": {
-            "path": "pwsh",
-            "icon": "terminal-powershell"
-        }
-    },
+    "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
     "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.fontFamily": "'Fira Code', 'Source Code Pro', Consolas, 'Courier New', monospace",
+    "terminal.integrated.fontSize": 16,
     "vim.easymotion": true,
     "vim.handleKeys": {
         "<C-b>": false,
@@ -168,7 +158,15 @@
                 "workbench.action.navigateRight"
             ]
         },
-        
+        {
+            "before": [
+                "g",
+                "a"
+            ],
+            "commands": [
+                "references-view.findReferences"
+            ]
+        }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         {
@@ -225,21 +223,23 @@
                 "workbench.action.navigateRight"
             ]
         },
+        {
+            "before": [
+                "g",
+                "a"
+            ],
+            "commands": [
+                "references-view.findReferences"
+            ]
+        }
     ],
     "window.commandCenter": true,
     "window.titleBarStyle": "custom",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "right",
     "workbench.editorAssociations": {
         "*.csv": "gc-excelviewer-csv-editor"
     },
-    "remote.SSH.defaultExtensions": [
-        "gitpod.gitpod-remote-ssh"
-    ],
-    "redhat.telemetry.enabled": false,
     "workbench.colorCustomizations": {},
-    "lldb.suppressUpdateNotifications": true,
-    "workbench.colorTheme": "GitHub Light",
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
+    "workbench.colorTheme": "Better Solarized Light",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "right",
 }
