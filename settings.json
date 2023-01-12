@@ -1,245 +1,29 @@
 {
-    "autoDocstring.docstringFormat": "sphinx",
-    "autoDocstring.startOnNewLine": true,
-    "C_Cpp.intelliSenseEngine": "Disabled",
-    "clangd.arguments": ["-header-insertion=never"],
-    "clangd.path": "/home/dylan.brackett/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.3/clangd_15.0.3/bin/clangd",
-    "cmake.configureOnOpen": false,
-    "cSpell.enabledLanguageIds": ["markdown"],
-    "editor.bracketPairColorization.enabled": true,
-    "editor.cursorSurroundingLines": 10,
-    "editor.fontFamily": "'Fira Code', 'Source Code Pro', Consolas, 'Courier New', monospace",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 16,
-    "editor.inlineSuggest.enabled": true,
-    "editor.lineNumbers": "relative",
-    "editor.linkedEditing": true,
-    "editor.minimap.enabled": false,
-    "editor.rulers": [
-        100
-    ],
-    "files.exclude": {
-        "**/bazel-*": true,
-        "**/.git/": true,
-        "**/.cache/": true
-    },
-    "editor.snippetSuggestions": "top",
-    "editor.suggestSelection": "first",
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 17,
+    "editor.tabSize": 2,
     "editor.wordWrap": "on",
-    "emmet.showSuggestionsAsSnippets": true,
-    "extensions.experimental.affinity": {
-        "vscodevim.vim": 1
+    "files.exclude": {
+        "**/.bazel-*": true,
+        "**/.cache": true
     },
+    "terminal.integrated.fontSize": 15,
+    "git.autoRepositoryDetection": "subFolders",
     "git.autofetch": true,
-    "git.ignoreLegacyWarning": true,
-    "git.ignoreMissingGitWarning": true,
-    "github.copilot.enable": {
-        "*": true,
-        "yaml": false,
-        "plaintext": true,
-        "markdown": true
-    },
-    "git.autoRepositoryDetection": false,
-    "git.confirmSync": false,
-    "git.enableSmartCommit": true,
-    "http.proxyStrictSSL": false,
-    "indentRainbow.ignoreErrorLanguages": ["*"],
-    "jupyter.sendSelectionToInteractiveWindow": true,
-    "lldb.suppressUpdateNotifications": true,
-    "python.languageServer": "Pylance",
-    "remote.SSH.defaultExtensions": [
-        "gitpod.gitpod-remote-ssh"
+    "cpplint.lineLength": 100,
+    "cSpell.userWords": [
+        "saildrone",
+        "sdpb"
     ],
-    "redhat.telemetry.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.path": "/home/dylan.brackett/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin/clangd",
+    "clangd.arguments": [
+        "-header-insertion=never"
+    ],
+    "clangd.checkUpdates": true,
     "security.workspace.trust.untrustedFiles": "open",
-    "settingsSync.ignoredSettings": [
-        "editor.fontSize",
-        "github.copilot.enable",
-        "terminal.integrated.fontSize"
-    ],
-    "settingsSync.keybindingsPerPlatform": false,
-    "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
-    "terminal.integrated.defaultProfile.linux": "bash",
-    "terminal.integrated.fontFamily": "'Fira Code', 'Source Code Pro', Consolas, 'Courier New', monospace",
-    "terminal.integrated.fontSize": 16,
-    "vim.easymotion": true,
-    "vim.handleKeys": {
-        "<C-b>": false,
-        "<C-A>": false,
-        "<C-f>": false,
-        "<C-j>": false,
-        "<C-e>": false,
-        "<C-w>": false,
-        "<C-z>": false,
-    },
-    "vim.hlsearch": true,
-    "vim.incsearch": true,
-    "vim.leader": " ",
-    "vim.smartRelativeLine": true,
-    "vim.useCtrlKeys": true,
-    "vim.useSystemClipboard": true,
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "u"
-            ],
-            "commands": [
-                "undo"
-            ]
-        },
-        {
-            "before": [
-                "C-r"
-            ],
-            "commands": [
-                "redo"
-            ]
-        },
-        {
-            "before": [
-                "j"
-            ],
-            "after": [
-                "g",
-                "j"
-            ]
-        },
-        {
-            "before": [
-                "k"
-            ],
-            "after": [
-                "g",
-                "k"
-            ]
-        },
-        {
-            "before": [
-                "K"
-            ],
-            "after": [
-                "g",
-                "h"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "h"
-            ],
-            "commands": [
-                "workbench.action.navigateLeft"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "j"
-            ],
-            "commands": [
-                "workbench.action.navigateDown"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "k"
-            ],
-            "commands": [
-                "workbench.action.navigateUp"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "l"
-            ],
-            "commands": [
-                "workbench.action.navigateRight"
-            ]
-        },
-        {
-            "before": [
-                "g",
-                "a"
-            ],
-            "commands": [
-                "references-view.findReferences"
-            ]
-        }
-    ],
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "j"
-            ],
-            "after": [
-                "g",
-                "j"
-            ]
-        },
-        {
-            "before": [
-                "k"
-            ],
-            "after": [
-                "g",
-                "k"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "h"
-            ],
-            "commands": [
-                "workbench.action.navigateLeft"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "j"
-            ],
-            "commands": [
-                "workbench.action.navigateDown"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "k"
-            ],
-            "commands": [
-                "workbench.action.navigateUp"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "l"
-            ],
-            "commands": [
-                "workbench.action.navigateRight"
-            ]
-        },
-        {
-            "before": [
-                "g",
-                "a"
-            ],
-            "commands": [
-                "references-view.findReferences"
-            ]
-        }
-    ],
-    "window.commandCenter": true,
-    "window.titleBarStyle": "custom",
-    "workbench.editorAssociations": {
-        "*.csv": "gc-excelviewer-csv-editor"
-    },
-    "workbench.colorCustomizations": {},
-    "workbench.colorTheme": "Better Solarized Light",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "right",
+    "doxdocgen.generic.briefTemplate": "",
+    "workbench.colorTheme": "Visual Studio Dark - C++",
+    "search.followSymlinks": false,
 }

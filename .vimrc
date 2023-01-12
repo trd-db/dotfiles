@@ -162,7 +162,7 @@ set fileformats=unix,dos,mac
 " Syntax highlighting
 syntax on 
 " Light background
-set background=light 
+set background=dark 
 
 " Show matching brackets
 set showmatch
@@ -172,4 +172,3 @@ nnoremap j gj
 nnoremap k gk
 vnoremap j gj
 vnoremap k gk
-
