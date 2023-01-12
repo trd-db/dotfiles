@@ -1,0 +1,29 @@
+autoDocstring
+Bazel
+Better C++ Syntax
+Better Shell Syntax
+C-mantic
+C/C++
+C/C++ themes
+C++ TestMate
+clangd
+CMake
+Cmake Tools
+Code Spell Checker
+cpplint
+Dev Containers
+Docker
+Doxygen Documentation Generator
+EditorConfig
+Github Pull Requests
+Gitlens
+Hex Editor
+Intellicode
+Markdown Lint
+Path Intellisense
+Python
+Python Indent
+Pylance
+Tabout
+vscode-proto3
+
